@@ -1,0 +1,68 @@
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 2.25vw;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  html, body {
+    margin:0px;
+    height:100%;
+    background-color: black;
+  }
+    #header{
+      font-size: 5vw;
+      position: relative;
+      text-align: center;
+      padding-top:8rem;
+      margin:auto;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: aqua;
+      text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 80px #0fa;
+  }
+  .subheading{
+    float: left;
+    width: 25vw;
+    padding: 2rem; 
+    font-family: monospace;
+    padding-top: 3.2rem;
+    color: aqua;
+    text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 80px #0fa;
+  }
+  #hb{
+      position: relative;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      height: 40vh;
+      text-align: center;
+      color: black;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://cdn.discordapp.com/attachments/1105879730143645757/1175522925932187750/image.png?ex=656b8a09&is=65591509&hm=eac41b5e929c29b7323e65d380a113335565303759a2009530254fd17db3c585&");
+  }
+  .btn1{
+      width: 100vw;
+      margin:auto;
+      padding: 0%;
+      height:40vh;
+  }
