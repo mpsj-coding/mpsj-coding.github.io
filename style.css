@@ -1,11 +1,13 @@
+body{
+    font-family: monospace;
+}
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    border-right: .15em solid #999; /* The typwriter cursor */
     font-size: 2.25vw;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: 0.05em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -20,13 +22,14 @@
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #999; }
   }
   
   html, body {
     margin:0px;
     height:100%;
-    background-color: black;
+    background-color: #141414;
+    color: #D4D4D4;
   }
     #header{
       font-size: 5vw;
@@ -40,12 +43,16 @@
   }
   .subheading{
     float: left;
-    width: 25vw;
-    padding: 2rem; 
-    font-family: monospace;
-    padding-top: 3.2rem;
-    color: aqua;
-    text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 80px #0fa;
+    width: fit-content;
+    padding-left: 2em;
+    color: #77c553;
+    text-shadow: 0 0 10px #329205, 0 0 4px #51ff00;
+    -webkit-text-stroke: 1px #0b250296;
+    width: 19vw;
+  }
+  .nametitle{
+    color: #CE9178;
+    width: fit-content;
   }
   #hb{
       position: relative;
@@ -59,10 +66,38 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url("https://cdn.discordapp.com/attachments/1105879730143645757/1175522925932187750/image.png?ex=656b8a09&is=65591509&hm=eac41b5e929c29b7323e65d380a113335565303759a2009530254fd17db3c585&");
-  }
+      border-bottom: 4px solid black;  
+    }
   .btn1{
       width: 100vw;
       margin:auto;
       padding: 0%;
-      height:40vh;
+      margin-bottom: 15vh;
+  }
+  .subheading-subtext{
+    font-weight: bolder;
+    padding-left: 0%;
+    float: right;
+    width: 77vw;
+  }
+  #discordbtn{
+    margin-left: 4em;
+    border: 5px ridge #224;
+    background: linear-gradient(135deg, #225, #002);
+    padding: 1em;
+    width: fit-content;
+    border-radius: 9px;
+    margin-top: 25vh;
+  }
+  a{
+      color: #A7CEA8;
+  }
+  a:hover{
+    color: #bdff9b;
+  }
+  a:visited{
+    color: #6A9955;
+  }
+  a:visited:hover{
+    color: #99da7b;
   }

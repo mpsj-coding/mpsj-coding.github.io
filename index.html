@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <Title>MPSJ WEBSITE CLUB</Title>
+    <title>MPSJ WEBSITE CLUB</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1105879730143645757/1175522925932187750/image.png?ex=656b8a09&is=65591509&hm=eac41b5e929c29b7323e65d380a113335565303759a2009530254fd17db3c585&">
     <link href="./style.css" rel="stylesheet" />
 
 </head>
+
 <body>
-<div id="hb">
-    
-    <h1 id='header'>MPSJ's Website Club</h1>
 
+<div id="hb">  
+    <h1 id="header">MPSJ's Website Club</h1>
 </div>
+<div id="main">
 <div class="typewriter">
-    <h1 style="text-align: center;margin-top: 5rem;color: orangered;width: 84%;">Learn How To Express Your Creativity Through Websites</h1>
+    <h1 style="text-align: center;margin-top: 5rem;color: #D7BA7D;width: 84%; padding-bottom: 1em;">Learn How To Express Your Creativity Through Websites</h1>
 </div>
+
 <div class="btn1" style="margin-left: 0;">
-    <h1 class="subheading"> Take Your Computer Skills to the Next Level</h1>
-    <h2 id="p" style="color: #fff; padding-top: 3.5rem; font-weight:bolder; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 0%; margin-bottom: 0%">
-        Learn how to create frontends and backends. Learn HTML, CSS and Javascript, including NodeJS. Create beautiful sites and understand the way that programming languages are structured.  
-    </h2>
+    <h1 class="subheading"> Take your computer skills to the next level</h1>
+    <h2 id="p" class="subheading-subtext">Learn how to create frontends and backends. Learn HTML, CSS and Javascript, including NodeJS. Create beautiful sites and understand the way that programming languages are structured.  </h2>
+</div>
 
-    
-</div>
-<div style="margin: auto; padding-top: 2vw; margin-left:0;padding-left:2vw;">
-    <h1 class="subheading">Meet the Team:</h1>
-</div>
-<div>
+<h1 class="subheading">Meet the Team:</h1>
+<div style="margin-left: 7em; margin-bottom: 5vh;">
+
     <div>
-        <h1 style="padding-left:2rem;color: goldenrod;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Shriman Rajesh</h1>
-        <h3 style="padding-left: 2.5rem;color: blanchedalmond;">Developer:
-
-            Languages I am learning/know: Javascript, Python, HTML, CSS, Lua, Rust, C++, XML, Pine Script and Solidity</h3>
+        <h1 class="nametitle">Shriman Rajesh</h1>
+        <i>Languages: Javascript, Node.JS, Python, HTML, CSS, Lua, Rust, C++, XML, Pine Script and Solidity</i>
+        <h3 style="padding-left: 2.5rem;">Languages I am learning/know: Javascript, Python, HTML, CSS, Lua, Rust, C++, XML, Pine Script and Solidity</h3>
     </div>
     <div>
-        <h1 style="padding-left:2rem; color:goldenrod;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Adrian Wywial</h1>
-        <h3 style="padding-left:2.5rem;color: blanchedalmond;">I program websites as a hobby. I like using older and reliable techniques because they are compatible with pretty much every browser out there.</h3>
+        <h1 class="nametitle">Adrian Wywial</h1>
+        <i>Languages: Javascript, HTML, CSS, Node.JS, Python, learning C++</i>
+        <h3 style="padding-left:2.5rem;">I program websites as a hobby. I like using older and reliable techniques because they are compatible with pretty much every browser out there.</h3>
     </div>
 </div>
-<div>
-    <h1 class="subheading">So Why Don't You Give It a Shot?</h1>
-    <h2 style="color: antiquewhite; padding-left: 4vw; padding-bottom: 4rem;">Join Us On Discord At:<a href="https://discord.gg/x6WQfYQNC4"> https://discord.gg/x6WQfYQNC4</a> </h2>
+
+<div class="btn1" style="margin-left: 0;">
+    <h1 class="subheading">So why don't you give it a shot?</h1>
+    <h2 class="subheading-subtext" style="padding-top: 4px;">Join us on Discord at: <a href="https://discord.gg/x6WQfYQNC4">https://discord.gg/x6WQfYQNC4</a></h2>
 </div>
 
-
-
+<div id="discordbtn">
+    <img src="https://cdn.discordapp.com/attachments/785693139729383424/1175586340939767898/bitmap.png">
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
     $("#p").fadeOut("fast");
-  $(".btn1").hover(function(){
+  $("#main").hover(function(){
     $("#p").fadeIn("slow");
   });
 ;
 });
 </script>
+</div>
 </body>
 </html>
