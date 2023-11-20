@@ -16,7 +16,7 @@ body{
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 73% }
   }
   
   /* The typewriter cursor effect */
@@ -24,12 +24,19 @@ body{
     from, to { border-color: transparent }
     50% { border-color: #999; }
   }
-  
+
+  @keyframes fold-out {
+    from, to { border-color: transparent }
+    50% { border-color: #999; }
+  }
+
   html, body {
     margin:0px;
     height:100%;
     background-color: #141414;
     color: #D4D4D4;
+    max-width: 100%;
+    overflow-x: hidden;
   }
     #header{
       font-size: 5vw;

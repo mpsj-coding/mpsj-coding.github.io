@@ -14,16 +14,17 @@
 </div>
 <div id="main">
 <div class="typewriter">
-    <h1 style="text-align: center;margin-top: 5rem;color: #D7BA7D;width: 84%; padding-bottom: 1em;">Learn How To Express Your Creativity Through Websites</h1>
+    <h1 style="text-align: center;margin-top: 5rem;color: #D7BA7D;width: 73%; margin-bottom: 1em;">Learn How To Express Your Creativity Through Websites</h1>
 </div>
 
 <div class="btn1" style="margin-left: 0;">
-    <h1 class="subheading"> Take your computer skills to the next level</h1>
-    <h2 id="p" class="subheading-subtext">Learn how to create frontends and backends. Learn HTML, CSS and Javascript, including NodeJS. Create beautiful sites and understand the way that programming languages are structured.  </h2>
+    <h1 class="subheading fadein"> Take your computer skills to the next level</h1>
+    <h3 id="p" class="subheading-subtext fadein">Learn how to create frontends and backends. Learn HTML, CSS and Javascript, including NodeJS. Create beautiful sites and understand the way that programming languages are structured.  </h3>
 </div>
 
-<h1 class="subheading">Meet the Team:</h1>
-<div style="margin-left: 7em; margin-bottom: 5vh;">
+<div>
+<h1 class="subheading fadein" style="width: 100%">Meet the Team:</h1>
+<div style="margin-left: 7em; margin-bottom: 5vh; width: 80vw;" class="fadein">
 
     <div>
         <h1 class="nametitle">Shriman Rajesh</h1>
@@ -31,15 +32,15 @@
         <h3 style="padding-left: 2.5rem;">I'm a programming enthusiast who's been making websites for around 4 years. I make my websites using a Node.JS backend like NestJS or React.</h3>
     </div>
     <div>
-        <h1 class="nametitle">Adrian Wywial</h1>
-        <i>Languages: Javascript, HTML, CSS, Node.JS, Python, learning C++</i>
+        <h1 class="nametitle">Adrian Wywial</h1><i>Languages: Javascript, HTML, CSS, Node.JS, Python, learning C++</i>
         <h3 style="padding-left:2.5rem;">I program websites as a hobby, which I've been doing for around 3 years. I like using older and reliable techniques because they are compatible with pretty much every browser out there. I almost always code in HTML and CSS, using standard JS for small things like effects or enhancing the user experience.</h3>
     </div>
 </div>
+</div>
 
-<div class="btn1" style="margin-left: 0;">
+<div class="btn1 fadein" style="margin-left: 0; width: 90vw;">
     <h1 class="subheading">So why don't you give it a shot?</h1>
-    <h2 class="subheading-subtext" style="padding-top: 4px;">Join us on Discord at: <a href="https://discord.gg/x6WQfYQNC4">https://discord.gg/x6WQfYQNC4</a></h2>
+    <h3 class="subheading-subtext" style="padding-top: 4px; width: 68vw;">Join us on Discord at: <a href="https://discord.gg/x6WQfYQNC4">https://discord.gg/x6WQfYQNC4</a></h3>
 </div>
 
 <!--<div id="discordbtn">
@@ -48,13 +49,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    $("#p").fadeOut("fast");
-  $("#main").hover(function(){
-    $("#p").fadeIn("slow");
-  });
-;
-});
+    $( document ).ready(function() {
+    $(".fadein").each(function(index) {
+        $(this).hide()
+    });         
+    $('.fadein').each(function(i) {
+    $(this).delay(60*(i+1)).slideDown("slow") //Uses the each methods index+1 to create a multiplier on the delay
+    });
+    });
 </script>
 </div>
 </body>
