@@ -34,12 +34,13 @@ body{
   }
   .subheading{
     float: left;
-    width: fit-content;
     padding-left: 2em;
     color: #77c553;
     text-shadow: 0 0 10px #329205, 0 0 4px #51ff00;
     -webkit-text-stroke: 1px #0b250296;
     width: 19vw;
+    max-height: 4.5ch;
+    overflow: hidden;
   }
   .nametitle{
     color: #CE9178;
@@ -63,7 +64,7 @@ body{
       width: 100vw;
       margin:auto;
       padding: 0%;
-      margin-bottom: 100px !important;
+      padding-bottom: 12vh !important;
   }
   .subheading-subtext{
     font-weight: bolder;
