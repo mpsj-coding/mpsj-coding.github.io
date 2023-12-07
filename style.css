@@ -93,3 +93,28 @@ body{
   a:visited:hover{
     color: #99da7b;
   }
+
+  #linkscont{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14pt;
+  }
+  #twitterurl{
+    color: cyan;
+    text-shadow: 0 0 2px cyan, 0 0 6px cyan;
+  }
+  #instagramurl{
+    color: magenta;
+    text-shadow: 0 0 2px magenta, 0 0 6px magenta;
+  }
+  #replurl{
+    color: limegreen;
+    text-shadow: 0 0 2px limegreen, 0 0 6px limegreen;
+  }
+  #discordurl{
+    color: #4162ce;
+    text-shadow: 0 0 2px #4162ce, 0 0 6px #4162ce;
+  }
