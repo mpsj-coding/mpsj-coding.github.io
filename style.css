@@ -116,3 +116,13 @@ body{
     color: #4162ce;
     text-shadow: 0 0 2px #4162ce, 0 0 6px #4162ce;
   }
+  #joindiscord, #discordlink{
+    padding: 0 !important;
+    margin-top: 10px;
+    width: fit-content !important;
+    display: flex;
+    height: fit-content;
+  }
+    #discordlink{
+    margin-left: 5pt;
+    }
