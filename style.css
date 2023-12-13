@@ -33,14 +33,12 @@ body{
       text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 80px #0fa;
   }
   .subheading{
-    float: left;
     padding-left: 2em;
     color: #77c553;
     text-shadow: 0 0 10px #329205, 0 0 4px #51ff00;
     -webkit-text-stroke: 1px #0b250296;
-    width: 19vw;
-    max-height: 4.5ch;
-    overflow: hidden;
+    width: 17%;
+    margin-top: 10px;
   }
   .nametitle{
     color: #CE9178;
@@ -61,7 +59,7 @@ body{
       border-bottom: 4px solid black;  
     }
   .btn1{
-      width: 100vw;
+      display: flex;
       margin:auto;
       padding: 0%;
       padding-bottom: 12vh !important;
